@@ -1,0 +1,9 @@
+@startuml
+Main -> Async: call
+activate Async
+
+Async -> Main: callback
+
+Async -> Main: result callback
+deactivate Async
+@enduml

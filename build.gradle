@@ -1,0 +1,22 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.41"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile 'org.controlsfx:controlsfx:9.0.0'
+    compile "no.tornado:tornadofx:1.7.15"
+    compile 'no.tornado:tornadofx-controlsfx:0.1'
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5'
+}
+
+kotlin {
+    experimental {
+        coroutines 'enable'
+    }
+}
+compileKotlin.kotlinOptions.jvmTarget = "1.8"

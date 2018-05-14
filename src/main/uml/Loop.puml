@@ -1,0 +1,3 @@
+@startuml
+Main -> Main: loop
+@enduml

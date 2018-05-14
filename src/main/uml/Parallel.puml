@@ -1,0 +1,38 @@
+@startuml
+Main -> "Worker 1"
+activate "Worker 1"
+
+Main -> "Worker 2"
+activate "Worker 2"
+
+Main -> "Worker 3"
+activate "Worker 3"
+
+Main -> "Worker 4"
+activate "Worker 4"
+
+"Worker 2" -> Main
+deactivate "Worker 2"
+
+Main -> "Worker 2"
+activate "Worker 2"
+
+"Worker 1" -> Main
+deactivate "Worker 1"
+
+Main -> "Worker 1"
+activate "Worker 1"
+
+"Worker 4" -> Main
+deactivate "Worker 4"
+
+"Worker 3" -> Main
+deactivate "Worker 3"
+
+"Worker 2" -> Main
+deactivate "Worker 2"
+
+"Worker 1" -> Main
+deactivate "Worker 1"
+
+@enduml
